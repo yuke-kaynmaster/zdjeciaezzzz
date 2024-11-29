@@ -1,0 +1,28 @@
+﻿<Window x:Class="zdjecia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zdjecia"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <UniformGrid Columns="3">
+        <Button x:Name="lewaczek"
+            Width="128"
+            Height="128" Click="lewaczek_Click">LEWO</Button>
+        <Image x:Name="obrazeczek" 
+            Source="kotel.jpg"></Image>
+        <Button x:Name="prawaczek"
+            Width="128"
+            Height="128" Click="prawaczek_Click">PRAWO</Button>
+        <TextBlock Margin="100,0,0,0"
+                   FontSize="120"
+            x:Name="liczbaPolubienBloczek">0</TextBlock>
+        <Button Width="128"
+                Height="128"
+            Click="Button_Click">Polub</Button>
+        <Button Width="128"
+                Height="128" Click="Button_Click_1"
+            >Reset polubień</Button>
+    </UniformGrid>
+</Window>
